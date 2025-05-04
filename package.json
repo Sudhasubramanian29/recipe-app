@@ -1,0 +1,29 @@
+{
+  "name": "recipe-app",
+  "version": "1.0.0",
+  "description": "Recipe app",
+  "main": "server.js",
+  "type":"commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sudhasubramanian29/recipe-app.git"
+  },
+  "author": "Sudha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sudhasubramanian29/recipe-app/issues"
+  },
+  "homepage": "https://github.com/Sudhasubramanian29/recipe-app#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
