@@ -1,6 +1,7 @@
 // config/db.js
 const app = require('./app');
 const mongoose = require('mongoose');
+const PORT = process.env.PORT || 3001;
 
 // MongoDB URI directly in code (Not using .env)
 const MONGO_URI = 'mongodb+srv://Sudha:sudha2903@cluster0.wniakwi.mongodb.net/fsd';
@@ -14,8 +15,8 @@ mongoose.connect(MONGO_URI, {
   console.log('✅ Connected to MongoDB');
   
   // Start server after DB connection
-  app.listen(3001, '127.0.0.1', () => {
-    console.log('🚀 Server is running @ http://127.0.0.1:3001');
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
   });
 })
 .catch((err) => {
